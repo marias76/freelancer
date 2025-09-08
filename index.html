@@ -4,39 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="/css/styles.css" as="styles">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>FreeLancer</title>
 </head>
 
 <body>
     <header>
-        <h1>Marco Antonio FreeLancer</h1>
+        <h1 class="titulo">Marco Antonio <span>FreeLancer</span></h1>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contactos</a>
+    <div class="nav-bg">
+        <nav class="contenedor navegacion-principal">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contactos</a>
 
-    </nav>
+        </nav>
+    </div>
 
     <!--<img src="/img/hero.jpg" alt="">-->
 
-    <section>
-        <h2>Diseño y Desarrollo Web FreeLancer</h2>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 24 24" fill="none"
-                stroke="#FFC107" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-            </svg>
-        </p>
-        <p>Cusco, Perú</p>
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Diseño y Desarrollo Web <span>FreeLancer</span></h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 24 24" fill="none"
+                    stroke="#FFC107" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>Cusco, Perú</p>
+            </div>
 
-        <a href="">Contactar</a>
+            <a href="">Contactar</a>
 
+        </div>
     </section>
 
     <main>
