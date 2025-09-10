@@ -1,9 +1,11 @@
+/*generales*/
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
+    --grisclaro: #dfe9f3;
 
     --fuente-principal: 3.8rem;
 }
@@ -23,6 +25,7 @@ body {
     font-size: 16px;
     /* 1rem = 10px*/
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
 }
 
 h1 {
@@ -43,15 +46,24 @@ h3 {
     text-align: center;
 }
 
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 .titulo span {
     font-size: 2rem;
 }
 
+/*contenedor*/
 .contenedor {
     max-width: 120rem;
     margin: 0 auto 0 auto;
 }
 
+/*navegacion*/
 .navegacion-principal {
     display: flex;
     flex-direction: column;
@@ -83,13 +95,14 @@ h3 {
     background-color: var(--secundario);
 }
 
+/*contenido hero*/
 .hero {
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 410px;
     position: relative;
-
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
@@ -110,7 +123,77 @@ h3 {
     text-align: center;
     color: var(--blanco);
 }
-.ubicacion{
+
+.ubicacion {
     display: flex;
     align-items: center;
+}
+
+/**/
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.boton:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+/**/
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    font-weight: normal;
+    color: var(--secundario);
+}
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+.servicio .iconos {
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
