@@ -13,15 +13,17 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    scroll-snap-type: y mandatory;
+    /*scroll-snap-type: y mandatory;*/
 }
-/**scroll snap*/
+
+/**scroll snap
 .servicios,
 .navegacion-principal,
 .formulario{
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+*/
 
 *,
 *:before,
